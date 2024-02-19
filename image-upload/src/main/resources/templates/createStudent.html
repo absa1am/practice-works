@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create Student - Demo</title>
+    </head>
+    <body>
+        <form th:action="@{/student/create}" th:object="${student}" enctype="multipart/form-data" method="post">
+            <label for="name">Name</label>
+            <input type="text" th:field="*{name}" id="name"><br>
+            <label for="email">Email</label>
+            <input type="email" th:field="*{email}" id="email"><br>
+            <label for="image">Photo</label>
+            <input type="file" name="image" id="image"><br>
+            <button type="submit">Create</button>
+        </form>
+    </body>
+</html>

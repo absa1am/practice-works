@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - Liquibase Demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Capital</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr th:each="country : ${countries.content}">
+                        <td th:text="${country.id}"></td>
+                        <td th:text="${country.name}"></td>
+                        <td th:text="${country.capital}"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div aria-label="page">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item" th:classappend="${currentPage} < 1 ? 'disabled'">
+                        <a class="page-link" th:href="@{/(page=${currentPage - 1})}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <th:block th:each="page : ${#numbers.sequence(0, countries.totalPages - 1)}">
+                        <li class="page-item">
+                            <a class="page-link" th:classappend="${currentPage} == ${page} ? 'active'" th:href="@{/(page=${page})}" th:text="${page + 1}"></a>
+                        </li>
+                    </th:block>
+                    <li class="page-item" th:classappend="${currentPage} >= ${countries.totalPages - 1} ? 'disabled'">
+                        <a class="page-link" th:href="@{/(page=${currentPage + 1})}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: #EAECEE;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+.login {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.footer {
+    background-color: #333;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 10px;
+}

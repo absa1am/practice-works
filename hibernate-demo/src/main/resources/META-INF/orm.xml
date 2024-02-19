@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd" version="1.0">
+
+    <description>XML Mapping File</description>
+    
+    <named-query name="findAll">
+        <query>SELECT b FROM Book AS b</query>
+    </named-query>
+
+    <entity class="com.example.hibernatedemo.models.Book">
+        <table name="Books" />
+        <attributes>
+            <id name="id">
+                <generated-value strategy="IDENTITY" />
+            </id>
+
+            <basic name="name">
+                <column name="name" length="50" />
+            </basic>
+
+            <basic name="author">
+                <column name="author" length="50" />
+            </basic>
+
+            <basic name="price">
+                <column name="price" precision="2" />
+            </basic>
+        </attributes>
+    </entity>
+
+    <entity class="com.example.hibernatedemo.models.Employee">
+        <table name="employees" />
+        <attributes>
+            <id name="id">
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="name" />
+            <basic name="email" />
+        </attributes>
+    </entity>
+
+</entity-mappings>

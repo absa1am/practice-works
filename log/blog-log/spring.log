@@ -1,0 +1,621 @@
+2024-02-18T12:31:58.339+06:00  INFO 22913 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Starting BlogApplication using Java 21.0.2 with PID 22913 (/home/dsi/Workspace/blog/build/classes/java/main started by dsi in /home/dsi/Workspace/blog)
+2024-02-18T12:31:58.341+06:00  INFO 22913 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-02-18T12:31:59.062+06:00  INFO 22913 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-18T12:31:59.117+06:00  INFO 22913 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2024-02-18T12:31:59.697+06:00  INFO 22913 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-18T12:31:59.710+06:00  INFO 22913 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-18T12:31:59.711+06:00  INFO 22913 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-18T12:31:59.766+06:00  INFO 22913 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-18T12:31:59.766+06:00  INFO 22913 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1369 ms
+2024-02-18T12:31:59.888+06:00  INFO 22913 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-18T12:32:00.275+06:00  INFO 22913 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@261bd7b
+2024-02-18T12:32:00.277+06:00  INFO 22913 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-18T12:32:00.507+06:00  INFO 22913 --- [blog] [main] liquibase.database                       : Set default schema name to public
+2024-02-18T12:32:01.117+06:00  INFO 22913 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:32:01.178+06:00  INFO 22913 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:32:01.185+06:00  INFO 22913 --- [blog] [main] liquibase.util                           : UPDATE SUMMARY
+2024-02-18T12:32:01.185+06:00  INFO 22913 --- [blog] [main] liquibase.util                           : Run:                          0
+2024-02-18T12:32:01.185+06:00  INFO 22913 --- [blog] [main] liquibase.util                           : Previously run:               4
+2024-02-18T12:32:01.185+06:00  INFO 22913 --- [blog] [main] liquibase.util                           : Filtered out:                 0
+2024-02-18T12:32:01.185+06:00  INFO 22913 --- [blog] [main] liquibase.util                           : -------------------------------
+2024-02-18T12:32:01.185+06:00  INFO 22913 --- [blog] [main] liquibase.util                           : Total change sets:            4
+2024-02-18T12:32:01.186+06:00  INFO 22913 --- [blog] [main] liquibase.util                           : Update summary generated
+2024-02-18T12:32:01.217+06:00  INFO 22913 --- [blog] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-02-18T12:32:01.218+06:00  INFO 22913 --- [blog] [main] liquibase.command                        : Command execution complete
+2024-02-18T12:32:01.289+06:00  INFO 22913 --- [blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-18T12:32:01.336+06:00  INFO 22913 --- [blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-18T12:32:01.369+06:00  INFO 22913 --- [blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-18T12:32:01.569+06:00  INFO 22913 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-18T12:32:02.394+06:00  INFO 22913 --- [blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-18T12:32:02.396+06:00  INFO 22913 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:32:02.836+06:00  WARN 22913 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-18T12:32:03.175+06:00  INFO 22913 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-18T12:32:03.185+06:00  INFO 22913 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Started BlogApplication in 5.345 seconds (process running for 5.704)
+2024-02-18T12:32:04.045+06:00  INFO 22913 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-18T12:32:04.046+06:00  INFO 22913 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-18T12:32:04.047+06:00  INFO 22913 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-18T12:33:20.373+06:00  INFO 22913 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:33:20.376+06:00  INFO 22913 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-18T12:33:20.391+06:00  INFO 22913 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-18T12:33:22.001+06:00  INFO 23126 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Starting BlogApplication using Java 21.0.2 with PID 23126 (/home/dsi/Workspace/blog/build/classes/java/main started by dsi in /home/dsi/Workspace/blog)
+2024-02-18T12:33:22.003+06:00  INFO 23126 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-02-18T12:33:22.688+06:00  INFO 23126 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-18T12:33:22.749+06:00  INFO 23126 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+2024-02-18T12:33:23.415+06:00  INFO 23126 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-18T12:33:23.429+06:00  INFO 23126 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-18T12:33:23.430+06:00  INFO 23126 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-18T12:33:23.481+06:00  INFO 23126 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-18T12:33:23.481+06:00  INFO 23126 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1422 ms
+2024-02-18T12:33:23.632+06:00  INFO 23126 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-18T12:33:24.052+06:00  INFO 23126 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@261bd7b
+2024-02-18T12:33:24.053+06:00  INFO 23126 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-18T12:33:24.307+06:00  INFO 23126 --- [blog] [main] liquibase.database                       : Set default schema name to public
+2024-02-18T12:33:24.967+06:00  INFO 23126 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:33:25.031+06:00  INFO 23126 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:33:25.039+06:00  INFO 23126 --- [blog] [main] liquibase.util                           : UPDATE SUMMARY
+2024-02-18T12:33:25.039+06:00  INFO 23126 --- [blog] [main] liquibase.util                           : Run:                          0
+2024-02-18T12:33:25.039+06:00  INFO 23126 --- [blog] [main] liquibase.util                           : Previously run:               4
+2024-02-18T12:33:25.039+06:00  INFO 23126 --- [blog] [main] liquibase.util                           : Filtered out:                 0
+2024-02-18T12:33:25.039+06:00  INFO 23126 --- [blog] [main] liquibase.util                           : -------------------------------
+2024-02-18T12:33:25.039+06:00  INFO 23126 --- [blog] [main] liquibase.util                           : Total change sets:            4
+2024-02-18T12:33:25.040+06:00  INFO 23126 --- [blog] [main] liquibase.util                           : Update summary generated
+2024-02-18T12:33:25.063+06:00  INFO 23126 --- [blog] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-02-18T12:33:25.065+06:00  INFO 23126 --- [blog] [main] liquibase.command                        : Command execution complete
+2024-02-18T12:33:25.156+06:00  INFO 23126 --- [blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-18T12:33:25.214+06:00  INFO 23126 --- [blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-18T12:33:25.252+06:00  INFO 23126 --- [blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-18T12:33:25.477+06:00  INFO 23126 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-18T12:33:26.338+06:00  INFO 23126 --- [blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-18T12:33:26.341+06:00  INFO 23126 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:33:26.888+06:00  WARN 23126 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-18T12:33:27.313+06:00  INFO 23126 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-18T12:33:27.326+06:00  INFO 23126 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Started BlogApplication in 5.779 seconds (process running for 6.105)
+2024-02-18T12:33:39.859+06:00  INFO 23126 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-18T12:33:39.859+06:00  INFO 23126 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-18T12:33:39.861+06:00  INFO 23126 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-18T12:37:24.353+06:00  INFO 23126 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:37:24.357+06:00  INFO 23126 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-18T12:37:24.380+06:00  INFO 23126 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-18T12:37:26.029+06:00  INFO 23357 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Starting BlogApplication using Java 21.0.2 with PID 23357 (/home/dsi/Workspace/blog/build/classes/java/main started by dsi in /home/dsi/Workspace/blog)
+2024-02-18T12:37:26.032+06:00  INFO 23357 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-02-18T12:37:26.747+06:00  INFO 23357 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-18T12:37:26.823+06:00  INFO 23357 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces.
+2024-02-18T12:37:27.351+06:00  INFO 23357 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-18T12:37:27.364+06:00  INFO 23357 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-18T12:37:27.365+06:00  INFO 23357 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-18T12:37:27.417+06:00  INFO 23357 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-18T12:37:27.417+06:00  INFO 23357 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1331 ms
+2024-02-18T12:37:27.541+06:00  INFO 23357 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-18T12:37:27.879+06:00  INFO 23357 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@29bcf51d
+2024-02-18T12:37:27.880+06:00  INFO 23357 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-18T12:37:29.295+06:00  INFO 23357 --- [blog] [main] liquibase.database                       : Set default schema name to public
+2024-02-18T12:37:29.804+06:00  INFO 23357 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:37:29.851+06:00  INFO 23357 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:37:29.857+06:00  INFO 23357 --- [blog] [main] liquibase.util                           : UPDATE SUMMARY
+2024-02-18T12:37:29.858+06:00  INFO 23357 --- [blog] [main] liquibase.util                           : Run:                          0
+2024-02-18T12:37:29.858+06:00  INFO 23357 --- [blog] [main] liquibase.util                           : Previously run:               4
+2024-02-18T12:37:29.858+06:00  INFO 23357 --- [blog] [main] liquibase.util                           : Filtered out:                 0
+2024-02-18T12:37:29.858+06:00  INFO 23357 --- [blog] [main] liquibase.util                           : -------------------------------
+2024-02-18T12:37:29.858+06:00  INFO 23357 --- [blog] [main] liquibase.util                           : Total change sets:            4
+2024-02-18T12:37:29.858+06:00  INFO 23357 --- [blog] [main] liquibase.util                           : Update summary generated
+2024-02-18T12:37:29.876+06:00  INFO 23357 --- [blog] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-02-18T12:37:29.877+06:00  INFO 23357 --- [blog] [main] liquibase.command                        : Command execution complete
+2024-02-18T12:37:29.942+06:00  INFO 23357 --- [blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-18T12:37:29.981+06:00  INFO 23357 --- [blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-18T12:37:30.006+06:00  INFO 23357 --- [blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-18T12:37:30.179+06:00  INFO 23357 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-18T12:37:30.927+06:00  INFO 23357 --- [blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-18T12:37:30.930+06:00  INFO 23357 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:37:31.344+06:00  WARN 23357 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-18T12:37:31.726+06:00  INFO 23357 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-18T12:37:31.735+06:00  INFO 23357 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Started BlogApplication in 6.217 seconds (process running for 6.546)
+2024-02-18T12:37:42.501+06:00  INFO 23357 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-18T12:37:42.502+06:00  INFO 23357 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-18T12:37:42.503+06:00  INFO 23357 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-18T12:38:36.563+06:00  INFO 23357 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:38:36.566+06:00  INFO 23357 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-18T12:38:36.579+06:00  INFO 23357 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-18T12:38:38.397+06:00  INFO 23568 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Starting BlogApplication using Java 21.0.2 with PID 23568 (/home/dsi/Workspace/blog/build/classes/java/main started by dsi in /home/dsi/Workspace/blog)
+2024-02-18T12:38:38.400+06:00  INFO 23568 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-02-18T12:38:39.109+06:00  INFO 23568 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-18T12:38:39.164+06:00  INFO 23568 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+2024-02-18T12:38:39.724+06:00  INFO 23568 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-18T12:38:39.739+06:00  INFO 23568 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-18T12:38:39.739+06:00  INFO 23568 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-18T12:38:39.795+06:00  INFO 23568 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-18T12:38:39.796+06:00  INFO 23568 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1340 ms
+2024-02-18T12:38:39.918+06:00  INFO 23568 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-18T12:38:40.307+06:00  INFO 23568 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1bedc703
+2024-02-18T12:38:40.309+06:00  INFO 23568 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-18T12:38:40.526+06:00  INFO 23568 --- [blog] [main] liquibase.database                       : Set default schema name to public
+2024-02-18T12:38:41.067+06:00  INFO 23568 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:38:41.111+06:00  INFO 23568 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:38:41.117+06:00  INFO 23568 --- [blog] [main] liquibase.util                           : UPDATE SUMMARY
+2024-02-18T12:38:41.117+06:00  INFO 23568 --- [blog] [main] liquibase.util                           : Run:                          0
+2024-02-18T12:38:41.117+06:00  INFO 23568 --- [blog] [main] liquibase.util                           : Previously run:               4
+2024-02-18T12:38:41.117+06:00  INFO 23568 --- [blog] [main] liquibase.util                           : Filtered out:                 0
+2024-02-18T12:38:41.117+06:00  INFO 23568 --- [blog] [main] liquibase.util                           : -------------------------------
+2024-02-18T12:38:41.117+06:00  INFO 23568 --- [blog] [main] liquibase.util                           : Total change sets:            4
+2024-02-18T12:38:41.117+06:00  INFO 23568 --- [blog] [main] liquibase.util                           : Update summary generated
+2024-02-18T12:38:41.133+06:00  INFO 23568 --- [blog] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-02-18T12:38:41.135+06:00  INFO 23568 --- [blog] [main] liquibase.command                        : Command execution complete
+2024-02-18T12:38:41.196+06:00  INFO 23568 --- [blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-18T12:38:41.237+06:00  INFO 23568 --- [blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-18T12:38:41.263+06:00  INFO 23568 --- [blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-18T12:38:41.441+06:00  INFO 23568 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-18T12:38:42.205+06:00  INFO 23568 --- [blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-18T12:38:42.207+06:00  INFO 23568 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:38:42.603+06:00  WARN 23568 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-18T12:38:42.940+06:00  INFO 23568 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-18T12:38:42.953+06:00  INFO 23568 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Started BlogApplication in 4.963 seconds (process running for 5.282)
+2024-02-18T12:38:51.829+06:00  INFO 23568 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-18T12:38:51.829+06:00  INFO 23568 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-18T12:38:51.830+06:00  INFO 23568 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-18T12:39:22.168+06:00  INFO 23568 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:39:22.171+06:00  INFO 23568 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-18T12:39:22.185+06:00  INFO 23568 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-18T12:39:23.725+06:00  INFO 23770 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Starting BlogApplication using Java 21.0.2 with PID 23770 (/home/dsi/Workspace/blog/build/classes/java/main started by dsi in /home/dsi/Workspace/blog)
+2024-02-18T12:39:23.727+06:00  INFO 23770 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-02-18T12:39:24.389+06:00  INFO 23770 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-18T12:39:24.444+06:00  INFO 23770 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+2024-02-18T12:39:24.951+06:00  INFO 23770 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-18T12:39:24.965+06:00  INFO 23770 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-18T12:39:24.965+06:00  INFO 23770 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-18T12:39:25.018+06:00  INFO 23770 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-18T12:39:25.019+06:00  INFO 23770 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1235 ms
+2024-02-18T12:39:25.153+06:00  INFO 23770 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-18T12:39:25.485+06:00  INFO 23770 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@29bcf51d
+2024-02-18T12:39:25.487+06:00  INFO 23770 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-18T12:39:25.705+06:00  INFO 23770 --- [blog] [main] liquibase.database                       : Set default schema name to public
+2024-02-18T12:39:26.251+06:00  INFO 23770 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:39:26.309+06:00  INFO 23770 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:39:26.317+06:00  INFO 23770 --- [blog] [main] liquibase.util                           : UPDATE SUMMARY
+2024-02-18T12:39:26.317+06:00  INFO 23770 --- [blog] [main] liquibase.util                           : Run:                          0
+2024-02-18T12:39:26.317+06:00  INFO 23770 --- [blog] [main] liquibase.util                           : Previously run:               4
+2024-02-18T12:39:26.317+06:00  INFO 23770 --- [blog] [main] liquibase.util                           : Filtered out:                 0
+2024-02-18T12:39:26.318+06:00  INFO 23770 --- [blog] [main] liquibase.util                           : -------------------------------
+2024-02-18T12:39:26.318+06:00  INFO 23770 --- [blog] [main] liquibase.util                           : Total change sets:            4
+2024-02-18T12:39:26.318+06:00  INFO 23770 --- [blog] [main] liquibase.util                           : Update summary generated
+2024-02-18T12:39:26.339+06:00  INFO 23770 --- [blog] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-02-18T12:39:26.341+06:00  INFO 23770 --- [blog] [main] liquibase.command                        : Command execution complete
+2024-02-18T12:39:26.426+06:00  INFO 23770 --- [blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-18T12:39:26.483+06:00  INFO 23770 --- [blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-18T12:39:26.521+06:00  INFO 23770 --- [blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-18T12:39:26.714+06:00  INFO 23770 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-18T12:39:27.490+06:00  INFO 23770 --- [blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-18T12:39:27.492+06:00  INFO 23770 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:39:27.880+06:00  WARN 23770 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-18T12:39:28.215+06:00  INFO 23770 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-18T12:39:28.224+06:00  INFO 23770 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Started BlogApplication in 4.952 seconds (process running for 5.274)
+2024-02-18T12:39:40.593+06:00  INFO 23770 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-18T12:39:40.593+06:00  INFO 23770 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-18T12:39:40.595+06:00  INFO 23770 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-18T12:41:20.915+06:00  INFO 23770 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:41:20.919+06:00  INFO 23770 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-18T12:41:20.932+06:00  INFO 23770 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-18T12:41:22.483+06:00  INFO 24033 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Starting BlogApplication using Java 21.0.2 with PID 24033 (/home/dsi/Workspace/blog/build/classes/java/main started by dsi in /home/dsi/Workspace/blog)
+2024-02-18T12:41:22.485+06:00  INFO 24033 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-02-18T12:41:23.215+06:00  INFO 24033 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-18T12:41:23.279+06:00  INFO 24033 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2024-02-18T12:41:23.945+06:00  INFO 24033 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-18T12:41:23.962+06:00  INFO 24033 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-18T12:41:23.962+06:00  INFO 24033 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-18T12:41:24.029+06:00  INFO 24033 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-18T12:41:24.030+06:00  INFO 24033 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1489 ms
+2024-02-18T12:41:24.154+06:00  INFO 24033 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-18T12:41:24.520+06:00  INFO 24033 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7f4596d0
+2024-02-18T12:41:24.522+06:00  INFO 24033 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-18T12:41:24.798+06:00  INFO 24033 --- [blog] [main] liquibase.database                       : Set default schema name to public
+2024-02-18T12:41:25.361+06:00  INFO 24033 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:41:25.407+06:00  INFO 24033 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:41:25.414+06:00  INFO 24033 --- [blog] [main] liquibase.util                           : UPDATE SUMMARY
+2024-02-18T12:41:25.414+06:00  INFO 24033 --- [blog] [main] liquibase.util                           : Run:                          0
+2024-02-18T12:41:25.414+06:00  INFO 24033 --- [blog] [main] liquibase.util                           : Previously run:               4
+2024-02-18T12:41:25.414+06:00  INFO 24033 --- [blog] [main] liquibase.util                           : Filtered out:                 0
+2024-02-18T12:41:25.414+06:00  INFO 24033 --- [blog] [main] liquibase.util                           : -------------------------------
+2024-02-18T12:41:25.414+06:00  INFO 24033 --- [blog] [main] liquibase.util                           : Total change sets:            4
+2024-02-18T12:41:25.414+06:00  INFO 24033 --- [blog] [main] liquibase.util                           : Update summary generated
+2024-02-18T12:41:25.433+06:00  INFO 24033 --- [blog] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-02-18T12:41:25.435+06:00  INFO 24033 --- [blog] [main] liquibase.command                        : Command execution complete
+2024-02-18T12:41:25.502+06:00  INFO 24033 --- [blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-18T12:41:25.542+06:00  INFO 24033 --- [blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-18T12:41:25.567+06:00  INFO 24033 --- [blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-18T12:41:25.755+06:00  INFO 24033 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-18T12:41:26.515+06:00  INFO 24033 --- [blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-18T12:41:26.518+06:00  INFO 24033 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:41:26.917+06:00  WARN 24033 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-18T12:41:27.273+06:00  INFO 24033 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-18T12:41:27.285+06:00  INFO 24033 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Started BlogApplication in 5.287 seconds (process running for 5.622)
+2024-02-18T12:41:34.083+06:00  INFO 24033 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-18T12:41:34.083+06:00  INFO 24033 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-18T12:41:34.084+06:00  INFO 24033 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-18T12:41:38.738+06:00 ERROR 24033 --- [blog] [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "category/index": Exception evaluating SpringEL expression: "currentPage >= totalPages - 1" (template: "category/index" - line 48, col 47)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "currentPage >= totalPages - 1" (template: "category/index" - line 48, col 47)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.ConditionalExpression.executeConditional(ConditionalExpression.java:209) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:77) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1030E: The operator 'SUBTRACT' is not supported between objects of type 'null' and 'java.lang.Integer'
+	at org.springframework.expression.spel.ExpressionState.operate(ExpressionState.java:266) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.springframework.expression.spel.ast.OpMinus.getValueInternal(OpMinus.java:152) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.springframework.expression.spel.ast.OpGE.getValueInternal(OpGE.java:48) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.springframework.expression.spel.ast.OpGE.getValueInternal(OpGE.java:37) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 62 common frames omitted
+
+2024-02-18T12:41:38.742+06:00 ERROR 24033 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "currentPage >= totalPages - 1" (template: "category/index" - line 48, col 47)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1030E: The operator 'SUBTRACT' is not supported between objects of type 'null' and 'java.lang.Integer'
+	at org.springframework.expression.spel.ExpressionState.operate(ExpressionState.java:266) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.springframework.expression.spel.ast.OpMinus.getValueInternal(OpMinus.java:152) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.springframework.expression.spel.ast.OpGE.getValueInternal(OpGE.java:48) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.springframework.expression.spel.ast.OpGE.getValueInternal(OpGE.java:37) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.1.3.jar:6.1.3]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.ConditionalExpression.executeConditional(ConditionalExpression.java:209) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:77) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-02-18T12:41:38.751+06:00 ERROR 24033 --- [blog] [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "error": Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-02-18T12:41:38.752+06:00 ERROR 24033 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-02-18T12:41:38.753+06:00 ERROR 24033 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+jakarta.servlet.ServletException: Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.18.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.3.jar:6.1.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.18.jar:10.1.18]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.3.jar:6.1.3]
+	... 36 common frames omitted
+
+2024-02-18T12:44:19.840+06:00  INFO 24033 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:44:19.843+06:00  INFO 24033 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-18T12:44:19.856+06:00  INFO 24033 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-18T12:44:21.424+06:00  INFO 24260 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Starting BlogApplication using Java 21.0.2 with PID 24260 (/home/dsi/Workspace/blog/build/classes/java/main started by dsi in /home/dsi/Workspace/blog)
+2024-02-18T12:44:21.425+06:00  INFO 24260 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-02-18T12:44:22.067+06:00  INFO 24260 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-18T12:44:22.139+06:00  INFO 24260 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
+2024-02-18T12:44:22.676+06:00  INFO 24260 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-18T12:44:22.690+06:00  INFO 24260 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-18T12:44:22.690+06:00  INFO 24260 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-18T12:44:22.744+06:00  INFO 24260 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-18T12:44:22.745+06:00  INFO 24260 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1267 ms
+2024-02-18T12:44:22.875+06:00  INFO 24260 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-18T12:44:23.322+06:00  INFO 24260 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1bedc703
+2024-02-18T12:44:23.323+06:00  INFO 24260 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-18T12:44:23.545+06:00  INFO 24260 --- [blog] [main] liquibase.database                       : Set default schema name to public
+2024-02-18T12:44:24.155+06:00  INFO 24260 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:44:24.200+06:00  INFO 24260 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:44:24.206+06:00  INFO 24260 --- [blog] [main] liquibase.util                           : UPDATE SUMMARY
+2024-02-18T12:44:24.206+06:00  INFO 24260 --- [blog] [main] liquibase.util                           : Run:                          0
+2024-02-18T12:44:24.206+06:00  INFO 24260 --- [blog] [main] liquibase.util                           : Previously run:               4
+2024-02-18T12:44:24.207+06:00  INFO 24260 --- [blog] [main] liquibase.util                           : Filtered out:                 0
+2024-02-18T12:44:24.207+06:00  INFO 24260 --- [blog] [main] liquibase.util                           : -------------------------------
+2024-02-18T12:44:24.207+06:00  INFO 24260 --- [blog] [main] liquibase.util                           : Total change sets:            4
+2024-02-18T12:44:24.207+06:00  INFO 24260 --- [blog] [main] liquibase.util                           : Update summary generated
+2024-02-18T12:44:24.226+06:00  INFO 24260 --- [blog] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-02-18T12:44:24.227+06:00  INFO 24260 --- [blog] [main] liquibase.command                        : Command execution complete
+2024-02-18T12:44:24.294+06:00  INFO 24260 --- [blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-18T12:44:24.336+06:00  INFO 24260 --- [blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-18T12:44:24.364+06:00  INFO 24260 --- [blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-18T12:44:24.554+06:00  INFO 24260 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-18T12:44:25.368+06:00  INFO 24260 --- [blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-18T12:44:25.371+06:00  INFO 24260 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:44:25.780+06:00  WARN 24260 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-18T12:44:26.101+06:00  INFO 24260 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-18T12:44:26.109+06:00  INFO 24260 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Started BlogApplication in 5.158 seconds (process running for 5.514)
+2024-02-18T12:44:35.649+06:00  INFO 24260 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-18T12:44:35.650+06:00  INFO 24260 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-18T12:44:35.651+06:00  INFO 24260 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-18T12:50:55.902+06:00  INFO 24260 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:50:55.905+06:00  INFO 24260 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-18T12:50:55.916+06:00  INFO 24260 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-18T12:50:57.958+06:00  INFO 24626 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Starting BlogApplication using Java 21.0.2 with PID 24626 (/home/dsi/Workspace/blog/build/classes/java/main started by dsi in /home/dsi/Workspace/blog)
+2024-02-18T12:50:57.960+06:00  INFO 24626 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-02-18T12:50:58.663+06:00  INFO 24626 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-18T12:50:58.722+06:00  INFO 24626 --- [blog] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+2024-02-18T12:50:59.289+06:00  INFO 24626 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-18T12:50:59.301+06:00  INFO 24626 --- [blog] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-18T12:50:59.302+06:00  INFO 24626 --- [blog] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-18T12:50:59.349+06:00  INFO 24626 --- [blog] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-18T12:50:59.350+06:00  INFO 24626 --- [blog] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1343 ms
+2024-02-18T12:50:59.478+06:00  INFO 24626 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-18T12:50:59.857+06:00  INFO 24626 --- [blog] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28279a49
+2024-02-18T12:50:59.858+06:00  INFO 24626 --- [blog] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-18T12:51:00.076+06:00  INFO 24626 --- [blog] [main] liquibase.database                       : Set default schema name to public
+2024-02-18T12:51:00.654+06:00  INFO 24626 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:51:00.711+06:00  INFO 24626 --- [blog] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-02-18T12:51:00.718+06:00  INFO 24626 --- [blog] [main] liquibase.util                           : UPDATE SUMMARY
+2024-02-18T12:51:00.718+06:00  INFO 24626 --- [blog] [main] liquibase.util                           : Run:                          0
+2024-02-18T12:51:00.718+06:00  INFO 24626 --- [blog] [main] liquibase.util                           : Previously run:               4
+2024-02-18T12:51:00.719+06:00  INFO 24626 --- [blog] [main] liquibase.util                           : Filtered out:                 0
+2024-02-18T12:51:00.719+06:00  INFO 24626 --- [blog] [main] liquibase.util                           : -------------------------------
+2024-02-18T12:51:00.719+06:00  INFO 24626 --- [blog] [main] liquibase.util                           : Total change sets:            4
+2024-02-18T12:51:00.719+06:00  INFO 24626 --- [blog] [main] liquibase.util                           : Update summary generated
+2024-02-18T12:51:00.740+06:00  INFO 24626 --- [blog] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-02-18T12:51:00.741+06:00  INFO 24626 --- [blog] [main] liquibase.command                        : Command execution complete
+2024-02-18T12:51:00.825+06:00  INFO 24626 --- [blog] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-18T12:51:00.881+06:00  INFO 24626 --- [blog] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-18T12:51:00.918+06:00  INFO 24626 --- [blog] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-18T12:51:01.149+06:00  INFO 24626 --- [blog] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-18T12:51:01.947+06:00  INFO 24626 --- [blog] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-18T12:51:01.949+06:00  INFO 24626 --- [blog] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T12:51:02.366+06:00  WARN 24626 --- [blog] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-18T12:51:02.740+06:00  INFO 24626 --- [blog] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-18T12:51:02.755+06:00  INFO 24626 --- [blog] [main] com.dsinnovators.blog.BlogApplication    : Started BlogApplication in 5.264 seconds (process running for 5.705)
+2024-02-18T12:51:05.250+06:00  INFO 24626 --- [blog] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-18T12:51:05.250+06:00  INFO 24626 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-18T12:51:05.251+06:00  INFO 24626 --- [blog] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-18T12:51:25.602+06:00 ERROR 24626 --- [blog] [http-nio-8080-exec-8] c.d.blog.services.PostService            : java.nio.file.FileSystemException: /home/dsi/Workspace/storage: Is a directory
+2024-02-18T12:51:35.978+06:00 ERROR 24626 --- [blog] [http-nio-8080-exec-7] c.d.blog.services.PostService            : java.nio.file.FileSystemException: /home/dsi/Workspace/storage: Is a directory
+2024-02-18T12:51:49.362+06:00 ERROR 24626 --- [blog] [http-nio-8080-exec-5] c.d.blog.services.PostService            : java.nio.file.FileSystemException: /home/dsi/Workspace/storage: Is a directory
+2024-02-18T12:52:05.973+06:00 ERROR 24626 --- [blog] [http-nio-8080-exec-2] c.d.blog.services.PostService            : java.nio.file.FileSystemException: /home/dsi/Workspace/storage: Is a directory
+2024-02-18T14:36:02.474+06:00  INFO 24626 --- [blog] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-18T14:36:02.477+06:00  INFO 24626 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-18T14:36:02.488+06:00  INFO 24626 --- [blog] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
